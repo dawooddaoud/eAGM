@@ -518,7 +518,7 @@ header {
 
 
 .last{
-    background-image: url(/images/lower-section-bg.jpg);
+    background-image: url(../images/lower-section-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
