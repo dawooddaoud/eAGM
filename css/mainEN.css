@@ -1,0 +1,846 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&family=Work+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+
+}
+
+a:hover{
+    color: black;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    box-shadow: 2px 4px 10px rgba(100, 100, 100, 0.2);
+    z-index: 10;
+
+    
+}
+.arabicFont {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.navBarContainer {
+    width: 1080px;
+    display: inline-flex;
+    margin: 0 1rem;
+}
+.navBarContainer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBarContainer .logo img {
+    height: 4rem;
+}
+
+.navBarContainer .navBtns {
+    margin-inline-start: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBtn {
+    background-color: white;
+    font-weight:500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(209, 209, 209);
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px rgba(100, 100, 100, 0.2);
+    transition: all 200ms ease-in-out;
+
+
+}
+
+.navBtn:hover {
+    box-shadow: 0px 5px 3px rgba(100, 100, 100, 0.4);
+    transition: all 200ms ease-in-out;
+    transform: translateY(-3px);
+}
+
+.navBtn img {
+    margin-right: 0.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.banner {
+    background-repeat: no-repeat;
+    background-image: url(../images/banner-bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bannerContainer {
+    display: flex;
+    align-items: center;
+    width: 1140px;
+    margin-top: 6rem;
+}
+.bannerLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 2rem;
+    
+}
+.bannerLeft h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+    
+}
+.bannerLogo img{
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.bannerRight {
+    user-select: none;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backLight{
+    content: "";
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 80%);    
+    mix-blend-mode:soft-light;
+    z-index: 1;
+}
+
+.bannerRight img{
+    height: 32rem;
+    width: 32rem;
+    z-index: 2;
+    
+
+}
+
+.aboutUs {
+    width: 100%;
+    height: 20vh;
+    background-color: #363942;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 0rem;
+}
+
+.aboutUsContainer {
+    width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.aboutUsContainer h2{
+    color: rgb(206, 200, 202);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+    flex-basis: 50%;
+}
+.aboutUsContainer .divider{
+    content: '';
+    background: linear-gradient(157deg, rgba(228,46,54,1) 0%, rgba(228,46,54,1) 100%);    width: 100%;
+    height: 10rem;
+    width: 2px;
+    margin: 0rem 3rem;
+}
+
+.aboutUsContainer img{
+    height: 6rem;
+    margin: 0 2rem;
+}
+
+.stepSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.stepsHeader{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stepsHeader img {
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+.stepsHeader h2 {
+
+    text-align: center;
+    font-size: 24px;
+}
+.stepSection .line{
+
+    content: '';
+    background: linear-gradient(157deg, rgba(228,54,46,1) 0%, rgba(228,54,46,1) 100%);    width: 100%;
+    height: 2px;
+    width: 21.75rem;
+    margin-bottom: 1rem;
+}
+
+.stepbox{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 50rem;
+    background-color: white;    border-radius: 1rem;
+    box-shadow: 0px 5px 10px rgba(100, 98, 98, 0.2);
+    
+    border-radius: 1rem;
+    
+}
+
+.stepbox:hover{
+    
+    box-shadow: 0px 5px 20px rgba(100, 98, 98, 0.3);
+    transition: all 100ms ease-in;
+    transform: translateY(-5px) !important;
+   
+}
+
+.stepbox:hover .circle .circle1 .circle2 {
+    
+   transform: scale(120%);
+   transition: all 100ms ease-in;
+}
+
+ 
+
+
+
+.stepbox .circle .circle1 {
+    content: '';
+   
+    background: linear-gradient(135deg, rgba(228,46,54,1) 0%, rgba(228,46,54,1) 37%, rgba(255,255,255,1) 37%, rgba(255,255,255,1) 100%);  
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+    clip-path: circle(100%);
+    border-radius: 100%;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(136, 136, 136, 0.3);
+    transition: all 100ms ease-in;
+    transform: scale(90%);
+    
+}
+
+.stepbox .circle .circle1 .circle2 {
+    content: '';
+    
+    background: linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    clip-path: circle(100%);
+    border-radius: 100%;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(136, 136, 136, 0.3);
+    text-align: center;
+    transform: scale(110%);
+    transition: all 100ms ease-in;
+
+    
+}
+
+
+.stepbox .circle .circle1 .circle2 .steptext {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #5f5f5f;
+    font-size: 13px;
+    line-height: 2.5em;
+    transform: translateY(-0.3em);
+    
+
+    
+}
+
+.stepbox .circle .circle1 .circle2 .steptext span {
+    color: rgb(32, 32, 32);
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 0px;
+
+    
+}
+
+
+
+
+.stepbox .text {
+    color: rgb(61, 61, 61);
+    width:100%;
+    font-size: 15px;
+    padding: 2rem;
+}
+
+.demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-top: 5rem;
+   padding-bottom: 2rem;
+   background-color: rgba(247,248,249,1) ;
+   color: rgb(255, 255, 255);
+       
+
+}
+
+
+
+.demoContainer{
+    width: 1140px;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.demoBox{
+    border-radius: 1rem;
+    box-shadow: 0px 5px 10px rgba(100, 98, 98, 0.2);
+    width: 100%;
+    padding: 5rem 5rem;
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(43, 43, 43);
+    background-image: url(../images/demo-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.demoBox:hover{
+    box-shadow: 0px 5px 20px rgba(100, 98, 98, 0.3);
+    transition: all 100ms ease-in;
+    transform: scale(105%) !important;
+
+}
+
+.demoBox h4{
+    text-align: center;
+}
+.events {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(247,248,249,1) 0%, #D1D2D4 75%);    
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.eventsContainer{
+    width: 1140px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+ 
+   
+    
+   
+}
+.events .line {
+    content: '';
+    background: linear-gradient(157deg, rgba(228,46,54,1) 0%, rgba(228,46,54,1) 100%);    width: 100%;
+    height: 2px;
+    width: 6.8rem;
+    margin-bottom: 1rem;
+
+}
+
+.eventBox {
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 10px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+    margin: 1rem;
+    height: max-content;
+    cursor: pointer;
+}
+.eventBox:hover{
+    transform: scale(103%) !important;
+    box-shadow: 0px 5px 20px rgba(100, 98, 98, 0.2);
+    transition: all 200ms ease-in-out;
+
+
+}
+
+.eventBox img{
+    width: 100%;
+    
+}
+
+.eventTitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.eventStatus {
+    padding: 0.4rem 0.5rem;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.eventOpen {
+
+    color: rgb(5, 161, 0);
+
+
+}
+
+.eventUpComing {
+
+    color: rgb(0, 70, 161);
+
+}
+.timerRegUpComing{
+    background-color: rgb(217, 243, 251) ;
+}
+
+.eventTimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.timerStatus {
+    text-align: right;
+    padding-right: 0.3em;
+    font-size: 14px;
+    line-height: 100%;
+    
+}
+
+.timerPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0.3em;
+}
+.timerNumber{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 90%;
+}
+.timerTitle{
+    font-size: 10px;
+}
+.timerRegOpen{
+    background-color: rgba(217,251,217,1);
+
+}
+
+.timerRegOpen .timerPart .timerNumber{
+    color: rgb(5, 161, 0);
+
+}
+
+.timerRegUpComing .timerPart .timerNumber{
+    color: rgb(0, 70, 161);
+
+}
+
+
+
+
+
+.last{
+    background-image: url(/images/lower-section-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+.lastContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.last img{
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(32, 32, 32);
+    color: rgb(199, 199, 199);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 15px;
+    text-align: center;
+}
+footer a:link{
+    color:rgba(228,46,54,1);
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+  
+    .navBarContainer {
+        width: 100vh;
+      
+       
+    }
+    .navBarContainer .logo img {
+        height: 3rem;
+        
+    }
+    
+    
+  
+    .navBtn {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12px;
+        padding: 0.5rem;
+        margin: 0 0.2rem;
+    
+    }
+
+    .navBtn img {
+        height: 1rem;
+        width: 1rem;
+        margin-right: 0;
+        margin-bottom: 0.1rem;
+    }
+    .banner {
+        background-image: url(../images/banner-bg-mobile2.jpg) !important;
+        height: 85vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .bannerContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6rem;
+       
+    }
+    .bannerLeft{
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    .bannerLogo img{
+        height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .bannerLeft h1 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;
+        color: black;
+    }
+    .bannerRight {
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .backLight{
+       
+        width: 15rem;
+        height: 15rem;
+     
+    }
+    .bannerRight img{
+        height: 13.5rem;
+        width: 13.5rem;
+    
+    }
+    .aboutUs {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11rem 0rem;
+    }
+
+    .aboutUsContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .aboutUsContainer h2{
+     
+        font-size: 14px;
+        padding: 1rem;
+        text-align: center !important; 
+    }
+
+    .aboutUsContainer .divider{
+        height: 2px;
+        width: 10rem;
+    }
+    .aboutUsContainer img{
+        height: 3rem;
+        margin: 1.5rem 0rem;
+        transform: rotate(-90deg) !important;
+    }
+    .stepSection{
+        overflow-x: hidden;
+        padding: 1rem;
+    }
+    .stepSection .line{
+        content: '';
+        background: linear-gradient(157deg, rgba(228,54,46,1) 0%, rgba(228,54,46,1) 100%);    width: 100%;
+        height: 2px;
+        width: 16.5rem;
+        margin-bottom: 1rem;
+    }
+    .stepsHeader{
+       margin-top: 1rem;
+    }
+    .stepsHeader img {
+        height: 3rem;
+        width: 3rem;
+        
+    }
+    
+    .stepsHeader h2 {
+
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .stepbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        width: 100%;
+     
+        
+    }
+    .stepbox .circle .circle1 {
+       
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+        padding: 1rem;
+       
+    }
+
+    .stepbox .circle .circle1 .circle2 {
+        transform: scale(130%);
+        width: 3rem;
+        height: 3rem;
+       
+    }
+
+    .stepbox .circle .circle1 .circle2 .steptext {
+        font-size: 10px;   
+        line-height: 1.9em;  
+    }
+
+    
+.stepbox .circle .circle1 .circle2 .steptext span {
+    
+    font-size: 25px;
+   
+
+    
+}
+    .stepbox .text {
+        font-size: 14px;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .demo{
+        padding: 2rem 0rem;
+    }
+    .demoContainer{
+        height: max-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0rem;
+        margin: 0rem 1rem;
+    }
+    .demoPic img{
+        margin-right: 0;
+    }
+    
+    .demoTitle { 
+        text-align: center;
+    }
+    
+    .eventsContainer{
+ 
+        width: 100%; 
+        display: grid;
+        grid-template-columns: 50% 50% ;
+    
+    }
+    .events{
+        padding-top: 40px;
+    }
+    .eventBox{
+       flex-basis: 50%;
+       margin: 0.5rem;
+    }
+
+    .eventStatus{
+        font-size: 12px;
+    }
+    .timerStatus {
+      
+        font-size: 12px;
+      
+        
+    }
+    .timerNumber{
+        font-size: 20px;
+        
+    }
+
+
+    .last img{
+        width: 2.5rem;
+        height: 2.5rem;
+       
+    }
+
+}
+
+.searchBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+}
+
+
+.searchBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+}
+
+.searchTerm{
+    width: 500px;
+    padding: 1rem 1rem;
+    border: solid 1px #aaaaaa;
+    border-radius:   10rem 0 0  10rem ;
+   
+   
+}
+
+
+.searchButton {
+    background-color: black;
+    padding: 1rem 1rem;
+    border: none;
+    color: white;
+    border-radius:  0  10rem   10rem  0;
+}
+
+.searchButton img{
+    height: 1.5rem;
+}
+/* here  */
+.searchButton:hover{
+    background:rgba(228,46,54,1) ;    
+
+}
